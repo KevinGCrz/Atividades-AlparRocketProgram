@@ -9,12 +9,14 @@
 header
 {
     background-color: rgb(29, 22, 43);
+    display: flex;
+    width: 100%;
 }
 
 header img
 {
-    width: 220px;
-    height: 190px;
+    width: 50%;
+    margin: 50px;
 }
 .imagem
 {
@@ -33,23 +35,22 @@ footer
     text-align: center;
 }
 
-.frentefundo p
+.frentefundo 
 {
-
-    text-align: center;
-    z-index: 1;
+    position: relative;
 }
 
-.fundovideo
+.videoarquivo
 {
-    padding: 12% 10% 12% 10%;
+    width: 100%;
+    padding: 3% 20% 3% 20%;
     background-image: url(./images/fundo.webp);
     background-position: center;
     background-size: cover;
     text-align: center;
-    filter: blur(5px);
-    z-index: -1;
+    box-shadow: 1px 1px 40px black;
 }
+
 
 .eps
 {
@@ -59,6 +60,8 @@ footer
 .eps h2
 {
     font-size: 22px;
+    color: #FBDC51;
+    text-shadow: 4px 4px 18px black;;
 }
 .eps p
 {
