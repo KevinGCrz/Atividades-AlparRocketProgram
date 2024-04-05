@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header
+{
+    padding: 3%;
+    text-align: center;
+    background-color: #ffeece;
+}
+header img
+{
+    padding: 4%;
+}
+header p
+{
+    font-size: 22px;
+    padding: 0 10% 0 10%;
+    color: #9A3411;
+    font-weight: bold;
+}
+
+.cardapio h1
+{
+    text-align: center;
+    padding: 3%;
+    color: #ffeece;
+}
+
+.cardapio
+{
+    background-color: #9A3411;
+    padding: 0 12% 0 12%;
+}
+
+/*---*/
+
+.item-cardapio
+{
+    color: #ffeece;
+    background-color: #882d0f;
+    padding: 18px 80px 18px 80px;
+}
+
+.item-cardapio li h2
+{
+    font-size: 60px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.item-cardapio li h3
+{
+    margin-top: 18px;
+}
+.item-cardapio ul p
+{
+    padding: 1% 1% 0 1%;
+    color: #110602;
+    font-size: 22px;
+}
+.valor
+{
+    font-weight: bold;
+}
+
+/*---*/
+
+.separador
+{
+    display: flex;
+    height: 110px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #FFEECE;
+}
+.separador h3
+{
+    font-size: 40px;
+    color: #110602;
+}
+
+/*---*/
+
+.horario
+{
+    display: flex;
+    background-color: #9A3411;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 12% 3% 12%;
+}
+
+.horario table
+{
+    color: #FFEECE;
+    border: 3px solid #110602;
+
+}
+.horario th
+{
+    background-color: #882d0f;
+    width: 250px;
+    height: 120px;
+    font-size: 25px;
+    border: 3px solid #110602;
+}
+.horario td
+{
+    background-color: #882d0f;
+    width: 250px;
+    height: 120px;
+    font-size: 20px;
+    border: 3px solid #110602;
+}
+
+/*---*/
+
+footer
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 12% 3% 12%;
+    background-color: #110602;
+    color: #FFEECE;
+}
+footer h3
+{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+footer p
+{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
