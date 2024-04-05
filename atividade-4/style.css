@@ -9,23 +9,38 @@
 header
 {
     background-color: rgb(29, 22, 43);
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 200px;
+    padding: 0% 10% 0 10%;
+
 }
 
 header img
 {
-    width: 50%;
-    margin: 50px;
+    width: 200px;
+    padding: 20px;
 }
-.imagem
+
+.sobre
 {
+    padding: 20% 0 20% 0;
     text-align: center;
+
+}
+.sobre p
+{
+    display: inline;
+    margin: 0 11px 0 11px;
+    font-weight: bold;
+    color: #FBDC51;
+    font-size: 20px;
+    text-shadow: 4px 4px 18px black;
 }
 
 body
 {
-    background-image: linear-gradient(rgb(51, 51, 51), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(20, 20, 20), rgb(0, 0, 0));
 }
 
 footer
@@ -61,7 +76,7 @@ footer
 {
     font-size: 22px;
     color: #FBDC51;
-    text-shadow: 4px 4px 18px black;;
+    text-shadow: 4px 4px 18px black;
 }
 .eps p
 {
@@ -77,7 +92,7 @@ footer
 
 .episodio
 {
-    background-color: rgb(51, 43, 68);
+    background-color: rgb(50, 40, 75);
     padding: 2% 10% 2% 10%;
     margin-bottom: 10px;
     box-shadow: 5px 5px 20px black;
@@ -87,7 +102,7 @@ footer
 .episodio .audio
 {
     display: flex;
-    background-color: rgb(108, 95, 133);
+    background-color: rgb(93, 70, 138);
     box-shadow: 5px 5px 20px black;
     margin: 3% 0 3% 0;
     border-radius: 15px;
@@ -110,6 +125,7 @@ footer
     height: 120px;
     margin: 10px 0 10px 10px;
     border-radius: 15px;
+    filter: opacity(70%);
 }
 
 .audio audio
