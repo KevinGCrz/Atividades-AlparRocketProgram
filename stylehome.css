@@ -115,7 +115,7 @@ section
 }
 
 /*-------------------------*/
-.separado
+.meusconhecimentos
 {
     text-align: center;
     padding-bottom: 20px;
@@ -123,7 +123,7 @@ section
     color: aquamarine;
     background-color: #212121;
 }
-.separado p
+.meusconhecimentos p
 {
     font-size: 50px;
     font-weight: bold;
