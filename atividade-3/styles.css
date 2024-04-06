@@ -82,10 +82,17 @@ button{
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background: #F68E3F;
+    background: #F65423;
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover
+{
+    transform: scale(1.1);
+    color: #FFD156;
 }

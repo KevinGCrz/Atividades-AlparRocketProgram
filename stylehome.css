@@ -115,6 +115,20 @@ section
 }
 
 /*-------------------------*/
+.separado
+{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: aquamarine;
+    background-color: #212121;
+}
+.separado p
+{
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 20px black;
+}
 
 .linguagens
 {
