@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 header
@@ -127,17 +128,45 @@ footer
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 3% 12% 3% 12%;
+    padding: 2% 12% 2% 12%;
     background-color: #110602;
     color: #FFEECE;
 }
 footer h3
 {
     font-size: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 footer p
 {
     font-size: 17px;
     margin-bottom: 5px;
+}
+
+/*---*/
+
+.icones
+{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.icones a
+{
+    text-decoration: none;
+    padding: 30px;
+    background-color: #FFEECE;
+    margin: 30px;
+    border-radius: 50%;
+}
+.icones a i
+{
+    font-size: 50px;
+    color: #111;
+}
+
+.rodape a 
+{
+    color: #FFEECE;
 }

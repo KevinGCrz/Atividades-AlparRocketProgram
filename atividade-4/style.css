@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    text-decoration: none;
 }
 
 header
@@ -28,7 +29,7 @@ header img
     text-align: center;
 
 }
-.sobre p
+.sobre a
 {
     display: inline;
     margin: 0 11px 0 11px;
