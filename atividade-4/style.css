@@ -136,3 +136,37 @@ footer
     margin-right: 35px;
     margin-left: 35px;
 }
+
+.icones
+{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.icones a
+{
+    background-color: #FBDC51;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 50%;
+    
+}
+.icones a i
+{
+    font-size: 60px;
+    color: rgb(50, 40, 75);
+}
+
+footer p
+{
+    margin-bottom: 25px;
+    color: rgb(121, 100, 153);
+    font-weight: bold;
+}
+footer h1
+{
+    color: #FBDC51;
+    text-shadow: 4px 4px 18px black;
+}
