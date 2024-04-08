@@ -1227,17 +1227,19 @@ footer p
 
 /*------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 914px) {
 
 body
 {
     text-align: center;
     overflow-x: hidden; /* Impede o scroll horizontal */
     margin: 0;
+    width: 100%;
+    
 }
 
 .back-video{
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -1262,42 +1264,27 @@ section{
 
 .indice
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 0px;
-    padding: 0px 0% 0px 0%;
-    background-color: transparent;
-    backdrop-filter: blur(1px);
-    z-index: 100;
-    margin-top: -180px;
+    display: none;
 }
 .navbar a
 {
-    font-size: 0px;
-    color: aliceblue;
-    margin: 0 0px 0px 0px;
-    font-weight: bold;
-    border-bottom: 0px solid transparent;
+    display: none;
 }
 .imgdireita
 {
-    padding-top: 0px;
-    transform: translate(0px);
+    display: none;
 }
 .imgdireita img
 {
-    width: 0px;
+    display: none;
 }
 .imgesquerda
 {
-    padding-top: 0px;
-    transform: translate(0px);
+    display: none;
 }
 .imgesquerda img
 {
-    width: 0px;
+    display: none;
 }
 
 /*---------------------------------------------------------------*/
@@ -1509,44 +1496,51 @@ p
     margin-right: 0px;
 }
 
+.texto-frase
+{
+    padding: 60px;
+}
 
 /*---------------------------------------------------------*/
 
 .zeus
 {
-    height: 1200px;
+    height: 900px;
+    overflow: hidden;
 }
 .zeus img
 {
     width: 150%;
-    margin-top: 40px;
-    margin-left: -180px;
+    margin-top: -30px;
+    margin-left: -70px;
 }
 
 /*---*/
 
 .poseidon
 {
-    height: 1200px;
+    height: 900px;
+    overflow: hidden;
 }
 .poseidon img
 {
     width: 150%;
-    margin-top: 20px;
-    margin-left: -180px;
+    margin-top: -30px;
 }
+
 
 /*---*/
 
 .athena
 {
-    height: 1100px;
+    height: 900px;
+    overflow: hidden;
 }
 .athena img
 {
-    width: 80%;
+    width: 110%;
     margin-left: -80px;
-    margin-top: 10px;
+    margin-top: -30px;
     margin-bottom: -50px;
 }
 
@@ -1554,21 +1548,23 @@ p
 
 .artemis
 {
-    height: 1100px;
+    height: 900px;
+    overflow: hidden;
 }
 .artemis img
 {
     width: 180%;
-    margin-top: 30px;
-    margin-bottom: -250px;
-    margin-left: -50px;
+    margin-top: -50px;
+    margin-bottom: -110px;
+    margin-left: 20px;
 }
 
 /*---*/
 
 .afrodite
 {
-    height: 1200px;
+    height: 1000px;
+    overflow: hidden;
 }
 .afrodite img
 {
@@ -1582,13 +1578,15 @@ p
 
 .ares
 {
-    height: 1400px;
+    height: 1100px;
+    overflow: hidden;
 }
 .ares img
 {
     width: 150%;
-    margin-top: 0px;
-    margin-bottom: -150px;
+    margin-top: -30px;
+    margin-bottom: -110px;
+    margin-left: 160px;
 }
 
 .ares p
@@ -1600,41 +1598,44 @@ p
 
 .dionisio
 {
-    height: 1300px;
+    height: 1000px;
+    overflow: hidden;
 }
 .dionisio img
 {
     width: 130%;
-    margin-top: 30px;
+    margin-top: -30px;
     margin-bottom: -30px;
-    margin-left: -100px;
+    margin-left: -20px;
 }
 
 /*---*/
 
 .hermes
 {
-    height: 1100px;
+    height: 900px;
+    overflow: hidden;
 }
 .hermes img
 {
     width: 150%;
     margin-top: -70px;
     margin-bottom: -70px;
-    margin-left: 0px;
+    margin-left: 210px;
 }
 
 /*---*/
 
 .demeter
 {
-    height: 1400px;
+    height: 1100px;
+    overflow: hidden;
 }
 
 .demeter img
 {
     width: 110%;
-    margin-top: 30px;
+    margin-top: -30px;
     margin-left: -90px;
     margin-bottom: -30px;
 }
@@ -1654,7 +1655,8 @@ p
 
 .megaera
 {
-    height: 1200px;
+    height: 1000px;
+    overflow: hidden;
 }
 .megaera img
 {
@@ -1669,12 +1671,14 @@ p
 .alecto
 {
     height: 1000px;
+    overflow: hidden;
 }
 .alecto img
 {
     width: 130%;
     margin-top: 20px;
-    margin-bottom: -30px;
+    margin-bottom: -60px;
+    margin-left: 60px;
 }
 
 /*---*/
@@ -1682,26 +1686,29 @@ p
 .tisifone
 {
     height: 800px;
+    overflow: hidden;
 }
 .tisifone img
 {
     width: 130%;
     margin-top: 60px;
     margin-bottom: -110px;
-    margin-right: 40px;
+    margin-left: -210px;
 }
 
 /*---*/
 
 .thanatos
 {
-    height: 900px;
+    height: 800px;
+    overflow: hidden;
 }
 .thanatos img
 {
     width: 130%;
     margin-top: 60px;
-    margin-bottom: -160px;
+    margin-bottom: -100px;
+
 }
 
 /*---*/
@@ -1709,12 +1716,13 @@ p
 .theseus
 {
     height: 1100px;
+    overflow: hidden;
 }
 .theseus img
 {
     width: 130%;
     margin-top: 30px;
-    margin-bottom: -60px;
+    margin-bottom: -110px;
     margin-left: -180px;
 }
 
@@ -1722,26 +1730,29 @@ p
 
 .asterius
 {
-    height: 900px;
+    height: 700px;
+    overflow: hidden;
 }
 .asterius img
 {
     width: 130%;
-    margin-top: 30px;
-    margin-bottom: -60px;
+    margin-top: -30px;
+    margin-bottom: -90px;
+    margin-left: 130px;
 }
 /*---*/
 
 .hades
 {
     height: 1200px;
+    overflow: hidden;
 }
 
 .hades img
 {
-    width: 110%;
+    width: 130%;
     margin-top: 30px;
-    margin-bottom: -60px;
+    margin-bottom: -90px;
     margin-left: -80px;
 }
 .hades p 
@@ -1766,20 +1777,22 @@ p
 .nix
 {
     height: 1000px;
+    overflow: hidden;
 }
 .nix img
 {
     width: 130%;
     margin-top: 60px;
     margin-bottom: -60px;
-    margin-left: -80px;
+    margin-left: -130px;
 }
 
 /*---*/
 
 .caronte
 {
-    height: 1200px;
+    height: 1100px;
+    overflow: hidden;
 }
 .caronte img
 {
@@ -1795,15 +1808,16 @@ p
 
 .aquiles
 {
-    height: 1300px;
+    height: 1100px;
+    overflow: hidden;
 }
 .aquiles img
 {
     width: 130%;
-    margin-top: 10px;
+    margin-top: -30px;
     margin-bottom: -60px;
     margin-right: 50px;
-    margin-left: -80px;
+    margin-left: -180px;
 }
 
 
@@ -1812,26 +1826,29 @@ p
 
 .cerberus
 {
-    height: 1000px;
+    height: 800px;
+    overflow: hidden;
 }
 .cerberus img
 {
     width: 110%;
-    margin-top: 60px;
+    margin-top: -40px;
     margin-bottom: -60px;
+    margin-left: 90px;
 }
 
 /*---*/
 
 .skelly{
 
-    height: 1200px;
+    height: 980px;
+    overflow: hidden;
 }
 
 .skelly img
 {
-    width: 60%;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: -60px;
     margin-bottom: -60px;
     margin-left: -80px;
 }
@@ -1847,9 +1864,10 @@ p
 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 520px;
+    grid-template-rows: 420px;
     gap: 0px;
     align-items: baseline;
+    margin-bottom: 100px;
 }
 
 .armas-titulo h1
@@ -1877,7 +1895,7 @@ p
 
 .armas img
 {
-    width: 100%;
+    width: 0%;
     padding: 3% 13% 3% 13%;
     transition: 1.1s;
     filter: drop-shadow(0px 0px 50px black);
@@ -1885,12 +1903,13 @@ p
 
 .container img
 {
-    padding: 0px;
-    margin: 0px;
+    width: 70%;
+    filter: drop-shadow(0px 0px 10px gold);
 }
+
 .container
 {
-    padding-top: 35px;
+    padding-top: 60px;
 }
 
 .armas h2
@@ -1903,7 +1922,7 @@ p
 .armas p
 {
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     padding: 25px;
     background-color: #1d1444;
     border-radius: 15px;
@@ -1935,12 +1954,13 @@ p
 
 .sobreojogo
 {
-    padding: 3% 8% 5% 8%;
+    padding: 0px;
 }
 .sobreojogo p
 {
     text-align: center;
-    padding-bottom: 35px;
+    font-size: 19px;
+    padding: 25px;
 }
 
 .sobreojogo h3
@@ -1949,6 +1969,7 @@ p
     color: #FFD156;
     padding: 50px;
     font-style: italic;
+    margin: 50px;
 
     background-color:#37140D;
 
@@ -1967,7 +1988,7 @@ p
 }
 .sobreojogo img
 {
-    width: 100%;
+    width: 90%;
     padding: 3% 1% 2% 1%;
     transition: 1.1s;
     filter: drop-shadow(0px 0px 50px black);
@@ -1990,7 +2011,9 @@ p
 
 .plataformas
 {
-    height: 470px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
 }
 .plataformas h2
 {
@@ -2015,6 +2038,9 @@ p
     z-index: 1;
     font-size: 17px;
     font-weight: bold;
+    background-color: #37140D;
+    border-radius: 30px;
+    margin-bottom: 5px;
     
 }
 
@@ -2024,20 +2050,23 @@ footer
     background-image:linear-gradient(#2A0707, black);
 
     padding: 4% 10% 4% 10%;
-    height: 500px;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
 }
 footer a
 {
     color: wheat;
     margin: 18px;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 15px;
 
 }
 footer p
 {
     color: #b1b1b1;
-    font-size: 15px;
+    font-size: 20px;
     padding: 15px;
     margin-top: 15px;
 }
