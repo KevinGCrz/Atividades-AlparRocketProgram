@@ -19,7 +19,11 @@ p
 }
 body
 {
-    height: 100vh;
+    height: 100%;
+    background-image: url(./images/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*-------------------------------------------*/
@@ -71,6 +75,7 @@ body
     background-color: brown;
     border-radius: 35px;
     box-shadow: black 2px 2px 5px;
+    border: #cc6161 5px solid;
 }
 .pokemon-ilustracao
 {
@@ -82,6 +87,7 @@ body
     width: 20vw;
     height: 20vw;
     transition: 0.3s;
+    filter: drop-shadow(2px 2px 8px black);
 }
 .pokemon-ilustracao img:hover
 {
@@ -103,18 +109,17 @@ body
 .pokebola
 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 6fr;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     background-color: transparent !important; 
-
 }
 .pokebola img
 {
     width: 40px;
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 .pokebola p
 {
@@ -135,7 +140,7 @@ body
     gap: 5%;
     justify-content: center;
     text-align: center;
-    padding: 2% 5% 5% 5%;
+    padding: 2% 5% 12% 5%;
 }
 
 /*-------------------------------------------*/
@@ -152,6 +157,7 @@ body
     justify-content: center;
 
     color: white;
+    border: #cc6161 8px solid;
 }
 .desc-pokemon p
 {
@@ -170,6 +176,7 @@ body
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
+    
 }
 
 .info
@@ -185,6 +192,7 @@ body
     justify-content: center;
 
     color: white;
+    border: #cc6161 8px solid;
 }
 .info p
 {
@@ -211,6 +219,7 @@ body
     justify-content: center;
 
     gap: 4%;
+    border: #cc6161 8px solid;
 }
 .tipo-pokemon p
 {
@@ -245,6 +254,7 @@ body
     font-weight: bold;
     text-align: center;
     color: #141413;
+    border: brown 5px solid;
 }
 
 button
@@ -255,9 +265,10 @@ button
     margin-top: 1%;
     background-color: brown;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: 900;
 }
 button:hover
 {
@@ -298,8 +309,10 @@ button:hover
 
 footer
 {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
     background-color: #642020;
-    margin-top: 60px;
     padding: 3% 5% 2% 5%;
     text-align: center;
 }
@@ -326,7 +339,8 @@ footer a
 }
 .grass
 {
-    background-color: rgb(49, 177, 49);
+    background-image: linear-gradient(rgb(49, 177, 49), rgb(121, 224, 121));
+    box-shadow: black 2px 2px 5px;
 }
 
 .bug-p p
@@ -336,7 +350,8 @@ footer a
 }
 .bug
 {
-    background-color: #707926;
+    background-image: linear-gradient(#88950C, #f7ffac);
+    box-shadow: black 2px 2px 5px;
 }
 
 .dragon-p p
@@ -346,7 +361,8 @@ footer a
 }
 .dragon
 {
-    background-color: #605597;
+    background-image: linear-gradient(#ded8ff, #634bda);
+    box-shadow: black 2px 2px 5px;
 }
 
 .electric-p p
@@ -356,7 +372,8 @@ footer a
 }
 .electric
 {
-    background-color: #dfc94d;
+    background-image: linear-gradient(#ffd900, #fff7c7);
+    box-shadow: black 2px 2px 5px;
 }
 
 .fairy-p p
@@ -366,7 +383,8 @@ footer a
 }
 .fairy
 {
-    background-color: #ecb6ec;
+    background-image: linear-gradient(#ffecff, #cc72cc);
+    box-shadow: black 2px 2px 5px;
 }
 
 .fighting-p p
@@ -376,7 +394,8 @@ footer a
 }
 .fighting
 {
-    background-color: #a54427;
+    background-image: linear-gradient(#a54427, #6e1f06);
+    box-shadow: black 2px 2px 5px;
 }
 
 .fire-p p
@@ -386,7 +405,8 @@ footer a
 }
 .fire
 {
-    background-color: #ff5825;
+    background-image: linear-gradient(rgb(255, 67, 67), #F0430E);
+    box-shadow: black 2px 2px 5px;
 }
 
 .flying-p p
@@ -406,7 +426,8 @@ footer a
 }
 .ghost
 {
-    background-color: #303044;
+    background-image: linear-gradient(#2b1f1f, #515179);
+    box-shadow: black 2px 2px 5px;
 }
 
 .ground-p p
@@ -416,7 +437,8 @@ footer a
 }
 .ground
 {
-    background-color: #b4a066;
+    background-image: linear-gradient(#b4a066, #6d5b2b);
+    box-shadow: black 2px 2px 5px;
 }
 
 .ice-p p
@@ -426,7 +448,8 @@ footer a
 }
 .ice
 {
-    background-color: #c8eaf5;
+    background-image: linear-gradient(#e9faff, #37d0ff);
+    box-shadow: black 2px 2px 5px;
 }
 
 .normal-p p
@@ -436,7 +459,8 @@ footer a
 }
 .normal
 {
-    background-color: #8b867b;
+    background-image: linear-gradient(#b9b9b9, #7e7565);
+    box-shadow: black 2px 2px 5px;
 }
 
 .poison-p p
@@ -446,17 +470,19 @@ footer a
 }
 .poison
 {
-    background-color: #5c275c;
+    background-image: linear-gradient(#8F408F, #3a183a);
+    box-shadow: black 2px 2px 5px;
 }
 
 .psychic-p p
 {
-    background-color: #DB3264;
+    background-color: #f32c68;
     color: #f1c7d3;
 }
 .psychic
 {
-    background-color: #ff6795;
+    background-image: linear-gradient(#DB3264, #ffaac4);
+    box-shadow: black 2px 2px 5px;
 }
 
 .rock-p p
@@ -466,7 +492,8 @@ footer a
 }
 .rock
 {
-    background-color: #534a2f;
+    background-image: linear-gradient(#807142, #353431);
+    box-shadow: black 2px 2px 5px;
 }
 
 .steel-p p
@@ -476,7 +503,8 @@ footer a
 }
 .steel
 {
-    background-color: #aca8c0;
+    background-image: linear-gradient(#dbd5f8, #6a6483);
+    box-shadow: black 2px 2px 5px;
 }
 
 .water-p p
@@ -486,7 +514,8 @@ footer a
 }
 .water
 {
-    background-color: #488acc;
+    background-image: linear-gradient(#1B76D0, #6fb7ff) ;
+    box-shadow: black 2px 2px 5px;
 }
 
 .dark-p p
@@ -496,7 +525,8 @@ footer a
 }
 .dark
 {
-    background-color: #141413;
+    background-image: linear-gradient(#4d4136, #141413);
+    box-shadow: black 2px 2px 5px;
 }
 
 .default p
@@ -702,8 +732,6 @@ body
     box-shadow: black 2px 2px 5px;
 }
 
-/*----------------MUDAR PESQUISA---------------------------*/
-
 .pesquisar-pokemon
 {
     display: flex;
@@ -778,6 +806,9 @@ button:hover
 
 footer
 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
     background-color: #642020;
     margin-top: 60px;
     padding: 3% 5% 2% 5%;
@@ -800,6 +831,11 @@ footer a
 /*===================================================================*/
 
 @media screen and (max-width: 650px) {
+
+    body
+    {
+        height: 100%;
+    }
 
     /*-------------------------------------------*/
 
@@ -1068,6 +1104,7 @@ button:hover
 
 footer
 {
+    position: relative;
     background-color: #642020;
     margin-top: 60px;
     padding: 5%;
