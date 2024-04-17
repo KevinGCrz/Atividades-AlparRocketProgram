@@ -2,9 +2,11 @@ const deposito = document.querySelector('.deposito');
 const saque = document.querySelector('.saque');
 const valorInput = document.querySelector('.valor');
 const exibirSaldo = document.querySelector('.saldo');
+const exibirExtrato = document.querySelector('.extrato')
 
 class ContaBancaria {
     saldo = 0;
+    historico = [];
 
     constructor(saldo) {
         this.saldo = saldo;
@@ -17,9 +19,13 @@ class ContaBancaria {
     sacar(valor) {
         this.saldo -= valor;
     }
+    historico(valor) {
+        this.historico = valor;
+    }
 }
 
 const conta = new ContaBancaria(0);
+let numOperacoes = 1;
 
 function FormatarValor(valor)
 {
@@ -35,6 +41,16 @@ function atualizaValor() {
     `;
 }
 
+function atualizarHistory(tipo) {
+
+    exibirExtrato.innerHTML +=
+    `
+    <p>${numOperacoes}° - ${FormatarValor(conta.saldo)} - ${tipo}</p>
+    `
+
+    numOperacoes++;
+}
+
 deposito.addEventListener('click', () => {
 
     const valor = parseFloat(valorInput.value);
@@ -43,6 +59,7 @@ deposito.addEventListener('click', () => {
 
         conta.depositar(valor);
         atualizaValor();
+        atualizarHistory('deposito');
 
     } else {
 
@@ -64,6 +81,7 @@ saque.addEventListener('click', () => {
 
         conta.sacar(valor);
         atualizaValor();
+        atualizarHistory('saque');
 
     } else {
 

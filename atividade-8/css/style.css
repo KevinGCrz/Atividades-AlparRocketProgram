@@ -43,6 +43,17 @@ header
     margin-bottom: 10px;
     box-shadow: black 2px 2px 5px;
 }
+.historico
+{
+    background-color: #CFD7C7;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: black 2px 2px 5px;
+    height: 150px;
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: initial;
+}
 
 .acoes p
 {
@@ -86,6 +97,7 @@ button:hover
 .saque button
 {
     background-color: #0B2027;
+    margin-bottom: 15px;
 }
 
 .saldo
@@ -110,6 +122,12 @@ button:hover
     color: rgb(24, 146, 24);
 }
 
+.extrato p
+{
+    color: #5a7983;
+    font-size: 17px;
+}
+
 footer
 {
     background-color: #0B2027;
@@ -128,4 +146,150 @@ footer a
 {
     color: #70A9A1;
     font-size: 18px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    body
+    {
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .layout
+    {
+        box-shadow: black 2px 2px 5px;
+        padding: 90px;
+        border-radius: 100px;
+        background-image:linear-gradient(#85c0b8, #6a919e);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .meuview
+    {
+        background-image:linear-gradient(#70A9A1, #517581);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+    }
+    .meuview h1
+    {
+        color: #40798C;
+        margin-bottom: 30px;
+    }
+    
+    header
+    {
+        background-color: #CFD7C7;
+        padding: 50px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        box-shadow: black 2px 2px 5px;
+    }
+    
+    .acoes p
+    {
+        color: white;
+    }
+    
+    input
+    {
+        margin: 10px;
+        width: 370px;
+        height: 50px;
+        font-size: 35px;
+        text-align: center;
+        border-radius: 30px;
+        border: 0;
+    }
+    
+    button
+    {
+        width: 380px;
+        height: 50px;
+        margin: 5px;
+        border-radius: 35px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: black 2px 2px 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 3px solid #F6F1D1;
+    }
+    button:hover
+    {
+        transform: scale(1.1);
+    }
+    
+    .deposito button
+    {
+        background-color: #40798C;
+    }
+    .saque button
+    {
+        background-color: #0B2027;
+    }
+    
+    .saldo
+    {
+        background-color: #F6F1D1;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 35px;
+        box-shadow: black 2px 2px 5px;
+    }
+    .saldo p
+    {
+        margin: 10px;
+    }
+    
+    .historico
+    {
+    background-color: #CFD7C7;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: black 2px 2px 5px;
+    height: 150px;
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: initial;
+    }
+
+    .acoes p
+    {
+        color: white;
+    }
+    .extrato p
+    {
+    color: #5a7983;;
+    font-size: 20px;
+    }
+    
+    footer
+    {
+        background-color: #0B2027;
+        height: 100%;
+        padding: 35px;
+        color: white;
+        text-align: center;
+        box-shadow: black 2px 2px 5px;
+    }
+    footer p
+    {
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+    footer a
+    {
+        color: #70A9A1;
+        font-size: 18px;
+    }
+
 }
