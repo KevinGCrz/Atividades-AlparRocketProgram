@@ -161,3 +161,172 @@ footer a
     font-size: 18px;
 }
 
+
+
+
+
+@media screen and (max-width: 980px) {
+
+body
+{
+    overflow-x: hidden;
+}
+
+header
+{
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(116, 116, 199);
+    color: aliceblue;
+}
+
+.minhaview
+{
+    background-image: linear-gradient(rgb(49, 49, 112), rgb(0, 0, 0));
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.botoes
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px;
+    gap: 10px;
+    padding: 30px 30px 0px;
+}
+.botoes button
+{
+
+    width: 100%;
+    height: 100%;
+    box-shadow: black 2px 2px 5px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+.viewCasa {
+
+    flex: 1;
+    padding: 32px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 4fr 3fr 3fr 3fr 3fr 4fr;
+    grid-template-areas: 'a a a'
+                         'b b b'
+                         'g c f'
+                         'd d f'
+                         'e e f'
+                         'h h h';
+}
+
+.viewCasa div{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: black 2px 2px 5px;
+
+    color: #fff;
+    background-color: rgb(9, 9, 26);
+    font-size: 20px;
+    border: 5px solid black;
+    padding: 8px;
+    display: flex;
+}
+
+.garagem-view {
+    grid-area: a;
+}
+.sala-view {
+    grid-area: b;
+}
+.cozinha-view {
+    grid-area: c;
+}
+.quarto1-view {
+    grid-area: d;
+}
+.quarto2-view {
+    grid-area: e;
+}
+.corredor-view {
+    grid-area: f;
+}
+.banheiro-view {
+    grid-area: g;
+}
+.lavanderia-view {
+    grid-area: h;
+}
+
+.opcao
+{
+    font-size: 18px;
+    font-weight: bold;
+    background-image: linear-gradient(rgb(64, 64, 146), rgb(26, 26, 59));
+    border: 0px;
+    border: 3px solid rgb(111, 111, 223);
+    transition: 0.1s;
+}
+.opcao:hover
+{
+    transform: scale(1.1);
+}
+
+.viewCasa div.apagado{
+    
+    color: #fffed6;
+
+}
+.apagado
+{
+    font-size: 32px;
+    font-weight: bold;
+    background-image: linear-gradient(rgb(14, 14, 29), rgb(6, 6, 26));
+    border: 0px;
+    border: 3px solid rgb(64, 64, 146);
+}
+
+.viewCasa div.aceso{
+    
+    color: #917119;
+
+}
+.aceso
+{
+    font-size: 32px;
+    font-weight: bold;
+    background-image: linear-gradient(rgb(255, 208, 0), rgb(255, 233, 134));
+    border: 0px;
+    border: 3px solid rgb(211, 144, 0);
+}
+
+
+footer
+{
+    background-color: rgb(14, 14, 34);
+    height: 100%;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    box-shadow: black 2px 2px 5px;
+}
+footer p
+{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+footer a
+{
+    color: rgb(255, 212, 119);
+    font-size: 18px;
+}
+
+}

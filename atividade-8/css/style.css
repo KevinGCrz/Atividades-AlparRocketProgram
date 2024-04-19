@@ -161,11 +161,12 @@ footer a
     .layout
     {
         box-shadow: black 2px 2px 5px;
-        padding: 90px;
-        border-radius: 100px;
+        padding: 30px;
+        border-radius: 30px;
         background-image:linear-gradient(#85c0b8, #6a919e);
         margin-top: 50px;
         margin-bottom: 50px;
+        width: 100%;
     }
     
     .meuview
@@ -177,6 +178,7 @@ footer a
         align-items: center;
         justify-content: center;
         padding: 5%;
+        width: 100%;
     }
     .meuview h1
     {
@@ -191,6 +193,7 @@ footer a
         border-radius: 30px;
         margin-bottom: 10px;
         box-shadow: black 2px 2px 5px;
+        width: 100%;
     }
     
     .acoes p
@@ -201,7 +204,7 @@ footer a
     input
     {
         margin: 10px;
-        width: 370px;
+        width: 80%;
         height: 50px;
         font-size: 35px;
         text-align: center;
@@ -211,7 +214,7 @@ footer a
     
     button
     {
-        width: 380px;
+        width: 90%;
         height: 50px;
         margin: 5px;
         border-radius: 35px;

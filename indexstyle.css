@@ -165,7 +165,7 @@ section
     padding: 10% 10% 5% 10%;
     text-align: center;
     color: #7FFFD4;
-    text-shadow: 0 0 20px black;
+    
 }
 .atividades-container
 {
@@ -443,7 +443,7 @@ body
 {
     background-color: aquamarine;
     height: 250px;
-    border-radius: 15px;
+    border-radius: 55px;
     transition: 0.3s;
 
 }
