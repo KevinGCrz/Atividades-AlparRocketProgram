@@ -1,0 +1,422 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    background-color: #2E2E2E;
+}
+
+.minha-view
+{
+    background-color: #181717;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px;
+    margin: 80px;
+    border-radius: 25px;
+
+    height: 85vh;
+     
+}
+
+/*----------------------------------*/
+
+.tarefas-agendadas
+{
+    margin-top: 40px;
+    overflow-y: auto;
+    max-height: 50vh;
+
+}
+
+.tarefas-agendadas::-webkit-scrollbar {
+    width: 12px;
+}
+
+.tarefas-agendadas::-webkit-scrollbar-thumb
+{
+    background-color: #2E2E2E;
+    border-radius: 6px;
+}
+
+.tarefas-agendadas::-webkit-scrollbar-track
+{
+    background-color: #181717;
+}
+
+.tarefas-agendadas p
+{
+    font-size: 20px;
+}
+
+
+/*----------------------------------*/
+
+.header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header h1
+{
+    background: linear-gradient(to right, #FC43B4, #368EF5);
+    font-size: 45px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 15px;
+}
+
+/*----------------------------------*/
+
+.nova-tarefa input
+{
+    width: 100%;
+    height: 80px;
+    font-size: 27px;
+    padding: 15px;
+    background-color: #2E2E2E;
+    border: 0px;
+    color: gainsboro;
+    border-radius: 12px;
+}
+
+.nova-tarefa
+{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    gap: 10px;
+    
+}
+
+/*----------------------------------*/
+
+.nova-tarefa button
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    border: 0px;
+
+    background-color: #2E2E2E;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nova-tarefa button:hover
+{
+    transform: scale(1.1);
+}
+.horario
+{
+    width: 150px;
+    height: 80px;
+    border-radius: 12px;
+    border: 0px;
+
+    background-color: #181717;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.horario:hover
+{
+    transform: scale(1.1);
+}
+
+.btns
+{
+    display: flex;
+    gap: 10px;
+}
+
+/*----------------------------------*/
+
+.minha-tarefa
+{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    padding: 20px;
+    color: white;
+    background-color: #202020;
+    border-radius: 35px;
+
+    margin-top: 22px;
+}
+
+/*----------------------------------*/
+
+.concluida
+{
+    background-color: #283d2c;
+
+}
+
+/*----------------------------------*/
+
+.tarefa-desc
+{
+    text-align: left;
+}
+
+.checkbox
+{
+    transition: 0.2s;
+    cursor: pointer;
+}
+.checkbox:hover
+{
+    transform: scale(1.1);
+}
+
+.trash
+{
+    transition: 0.2s;
+    cursor: pointer;
+}
+.trash:hover
+{
+    transform: scale(1.1);
+}
+
+footer
+{
+    background-color: #181717;
+    padding: 80px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+
+}
+footer p
+{
+    color: #7aa8dd;
+    margin-bottom: 10px;
+}
+footer a
+{
+    text-decoration: none;
+    color: #7aa8dd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+cor fundo: #181717
+cor input: #2E2E2E
+green: #3B9464
+
+1: #FC43B4
+2: #368EF5
+
+*/
+
+
+
+@media screen and (max-width: 1000px) {
+
+    
+    .minha-view
+    {
+        background-color: #181717;
+    
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    
+        padding: 60px 30px;
+        margin: 40px;
+        border-radius: 25px;
+        height: 90vh;
+    }
+
+    /*----------------------------------*/
+
+    .tarefas-agendadas
+    {
+        margin-top: 10px;
+        overflow-y: auto;
+        max-height: 48vh;
+
+    }
+
+    .tarefas-agendadas::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .tarefas-agendadas::-webkit-scrollbar-thumb
+    {
+        background-color: #2E2E2E;
+        border-radius: 6px;
+    }
+
+    .tarefas-agendadas::-webkit-scrollbar-track
+    {
+        background-color: #181717;
+    }
+
+    /*----------------------------------*/
+
+    .header
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .header h1
+    {
+        background: linear-gradient(to right, #FC43B4, #368EF5);
+        font-size: 45px;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 20px 10px;
+    }
+    
+    /*----------------------------------*/
+    
+    .nova-tarefa input
+    {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+        padding: 15px;
+        background-color: #2E2E2E;
+        border: 0px;
+        color: gainsboro;
+        border-radius: 12px;
+    }
+    
+    .nova-tarefa
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    
+    /*----------------------------------*/
+    
+    .nova-tarefa button
+    {
+        width: 100%;
+        height: 60px;
+        border-radius: 12px;
+        border: 0px;
+    
+        background-color: #2E2E2E;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+        font-size: 22px;
+    }
+    .nova-tarefa button:hover
+    {
+        transform: scale(1.1);
+    }
+    .horario
+    {
+        width: 100%;
+        height: 80px;
+        border-radius: 12px;
+        border: 0px;
+    
+        background-color: #181717;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .horario:hover
+    {
+        transform: scale(1.1);
+    }
+    
+    .btns
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /*----------------------------------*/
+    
+    .minha-tarefa
+    {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+        max-width: 100%;
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+        padding: 20px;
+        color: white;
+        background-color: #202020;
+        border-radius: 35px;
+    
+        margin-top: 20px;
+    }
+    
+    /*----------------------------------*/
+    
+    .tarefas-agendadas p
+    {
+        font-size: 15px;
+        padding: 15px;
+    }
+    .tarefas-agendadas img
+    {
+        width: 35px;
+    }
+    
+    .concluida
+    {
+        background-color: #283d2c;
+    
+    }
+
+    footer
+    {
+        background-color: #181717;
+        padding: 80px;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    footer p
+    {
+        color: #7aa8dd;
+        margin-bottom: 10px;
+    }
+    footer a
+    {
+        text-decoration: none;
+        color: #7aa8dd;
+    }
+}
